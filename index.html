@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="cleartype" content="on"/><![endif]-->
+
+    <!-- SEO -->
+    <title>Taylor Demo</title>
+ 
+    <!-- STYLESHEETS -->
+    <link
+      rel="stylesheet"
+      media="screen, projection"
+      href="assets/styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen, projection"
+      href="assets/styles/screen.css"
+    />
+  </head>
+  <body>
+    <div class="site">
+      <div class="site-hd">
+        <div class="logo"></div>
+        <div class="header-links">
+          <ul class="hList">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">My Subscriptions</a></li>
+            <li><a href="#">My Articles</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-nav">
+        <ul>
+          <li class="site-nav-li" onclick="openTab('Destinations')">
+            Destinations
+          </li>
+          <li class="site-nav-li" onclick="openTab('Getaways')">
+            Getaways
+          </li>
+          <li class="site-nav-li" onclick="openTab('TravelTips')">
+            Travel Tips
+          </li>
+          <li class="site-nav-li selected" onclick="openTab('News')">
+            News &amp; Features
+          </li>
+          <li class="site-nav-li" onclick="openTab('Contests')">
+            Contests
+          </li>
+          <li class="site-nav-li" onclick="openTab('Contact')">
+            Contact Us
+          </li>
+        </ul>
+      </div>
+
+      <div class="site-bd" id="Destinations" style="display:none">
+        <h2 class="section-header">Destinations</h2>
+      </div>
+      <div class="site-bd" id="Getaways" style="display:none">
+        <h2 class="section-header">Getaways</h2>
+      </div>
+      <div class="site-bd" id="TravelTips" style="display:none">
+        <h2 class="section-header">Travel Tips</h2>
+      </div>
+
+      <div class="site-bd" id="News">
+        <section class="section-primary">
+          <div class="carousel-wrapper">
+            <ul class="carousel" id="js-carousel">
+              <li class="carousel-item">
+                <img src="assets/images/sub.jpg" alt="" />
+              </li>
+              <li class="carousel-item">
+                <img src="assets/images/venetian.jpg" alt="" />
+              </li>
+              <li class="carousel-item">
+                <img src="assets/images/london.jpg" alt="" />
+              </li>
+              <li class="carousel-item">
+                <img src="assets/images/rushmore.jpg" alt="" />
+              </li>
+            </ul>
+            <!-- carousel controls -->
+            <span id="prev" class="prev"></span>
+            <span id="next" class="next"></span>
+            <div class="pagination" id="pagination">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <aside>
+            <div class="aside-container signup-wrapper">
+              <div class="signup-primary">
+                <div class="aside-header">
+                  <span class="icon-news"></span>Sign Up For Our Newsletter
+                </div>
+                <div class="aside-content">
+                  <form>
+                    <input
+                      class="email-input"
+                      type="text"
+                      placeholder="user@domain.com"
+                    />
+
+                    <div class="frm-selections">
+                      <p>Select the newsletters you'd like to receive</p>
+                      <label class="label label-1"
+                        >Destinations &amp; Getaways
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="label label-2"
+                        >Weekly Travel Tips
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <input type="submit" class="aside-btn" value="Submit" />
+                  </form>
+                </div>
+              </div>
+
+              <div class="aside-footer">
+                <ul class="hList aside-hlist">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="aside-container test-wrapper">
+              <div class="aside-header">
+                <span class="icon-test"></span>Featured Testimonial
+              </div>
+              <div class="aside-content">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..."
+              </div>
+              <a href="#" class="aside-btn">Read More</a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section-videos">
+          <div class="section-header videos-header">Popular Videos</div>
+          <div class="videos-container">
+            <div class="video video-1">
+              <video width="225" height="170" poster="assets/images/vid1.png">
+                <source src="#" type="video/mp4" />
+                <source src="#" type="video/ogg" />
+              </video>
+              <a href="#" class="play-btn"></a>
+              <div class="video-title">Team Mongoose</div>
+            </div>
+
+            <div class="video video-2">
+              <video width="225" height="170" poster="assets/images/vid2.png">
+                <source src="#" type="video/mp4" />
+                <source src="#" type="video/ogg" />
+              </video>
+              <a href="#" class="play-btn"></a>
+              <div class="video-title">St. Paul's Cathedral</div>
+            </div>
+
+            <div class="video video-3">
+              <video width="225" height="170" poster="assets/images/vid3.png">
+                <source src="#" type="video/mp4" />
+                <source src="#" type="video/ogg" />
+              </video>
+              <a href="#" class="play-btn"></a>
+              <div class="video-title">Hollywood and Highland</div>
+            </div>
+
+            <div class="video video-4">
+              <video width="225" height="170" poster="assets/images/vid4.png">
+                <source src="#" type="video/mp4" />
+                <source src="#" type="video/ogg" />
+              </video>
+              <a href="#" class="play-btn"></a>
+              <div class="video-title">Lake Wissota</div>
+            </div>
+
+            <div class="video video-5">
+              <video width="225" height="170" poster="assets/images/vid5.png">
+                <source src="#" type="video/mp4" />
+                <source src="#" type="video/ogg" />
+              </video>
+              <a href="#" class="play-btn"></a>
+              <div class="video-title">The Bellagio Fountains</div>
+            </div>
+
+            <div class="video video-6">
+              <video width="225" height="170" poster="assets/images/vid6.png">
+                <source src="#" type="video/mp4" />
+                <source src="#" type="video/ogg" />
+              </video>
+              <a href="#" class="play-btn"></a>
+              <div class="video-title">The Atlantic Coast</div>
+            </div>
+            <div class="empty-space-child"></div>
+            <div class="empty-space-child"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="site-bd" id="Contests" style="display:none">
+        <h2 class="section-header">Contests</h2>
+      </div>
+      <div class="site-bd" id="Contact" style="display:none">
+        <h2 class="section-header">Contact Us</h2>
+      </div>
+
+      <div class="site-ft">
+        <div class="footer">
+          <div class="footer-content">
+            <ul class="hList">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="hList bus-detail">
+              <li>&copy; 2013 Crispin &amp; Mulberry</li>
+              <li>1640 Riverside Drive, Hill Valley, California, 95420</li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <a href="#" class="social-link fb"></a>
+            <a href="#" class="social-link fl"></a>
+            <a href="#" class="social-link tw"></a>
+            <a href="#" class="social-link vm"></a>
+            <a href="#" class="social-link rs"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="assets/scripts/jquery-1.11.2.js"></script>
+    <script src="assets/scripts/carousel.js"></script>
+    <script>
+      // handle tabbed navigation
+      function openTab(tab) {
+        var i;
+        var x = document.getElementsByClassName("site-bd");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(tab).style.display = "block";
+
+        $(".site-nav-li").removeClass("selected");
+        var selectedTab = event.target;
+        $(selectedTab).addClass("selected");
+      }
+    </script>
+  </body>
+</html>
